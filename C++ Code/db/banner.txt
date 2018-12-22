@@ -1,0 +1,12 @@
+*-----------------------------------------------------------------------*
+Welcome to this RFC server! For server rules please use /RULES, and 
+for info about what different functions are available for your use, 
+and what they mean, please use /INFO.
+
+Created by: Angela Root 11-7-2018
+
+Latest release: 12-9-2018
+
+To log in or create an accout please enter a nickname with:
+     /NICK <your nickname>    
+*-----------------------------------------------------------------------*

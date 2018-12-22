@@ -25,7 +25,9 @@ int cs457::tcpUserSocket::getSocket()
 }; 
 int cs457::tcpUserSocket::closeSocket()
 {
-    return close(userSocket);
+    shutdown(userSocket, SHUT_RDWR);
+    close(userSocket);
+    return 0;
 }; 
 
 void cs457::tcpUserSocket::setUserInfoIPv4(string address, uint16_t port)

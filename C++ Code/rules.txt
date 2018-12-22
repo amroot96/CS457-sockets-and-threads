@@ -1,0 +1,5 @@
+Hello, the rules for this server are as follows:
+
+1. When you first login you must provide the server with a unique name and a password.
+2. Once you have both you will be able to join and create other channels, as well as edit them. 
+3. If you would like to know the possible commands you are able to do here please send the message "/HELP". 

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TCPUSERSOCKET_H
+#define TCPUSERSOCKET_H
 
 #include <sys/socket.h>
 #include <netinet/in.h> 
@@ -31,6 +32,7 @@ namespace cs457
 
             ssize_t sendString(const string & data,bool useMutex = true);
             string getUniqueIdentifier();
+            inline string getAddress() {return clientAddressIPv4;};
          
 
         private:
@@ -43,3 +45,5 @@ namespace cs457
     };
 
 }
+
+#endif

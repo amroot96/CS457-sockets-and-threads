@@ -1,5 +1,3 @@
-#include <netinet/in.h> 
-#include <arpa/inet.h>
 #include "tcpServerSocket.h"
 #include "tcpUserSocket.h"
 
@@ -20,7 +18,8 @@ cs457::tcpServerSocket::tcpServerSocket(string networkAddress, uint portNumber):
 
 int cs457::tcpServerSocket::bindSocket()
 {
-    return bind(serverSocket,(struct sockaddr *)&serverAddress,sizeof(serverAddress));    
+    socklen_t size = sizeof(serverAddress);
+    return ::bind(serverSocket,(struct sockaddr *)&serverAddress,size);
 }
         
 int cs457::tcpServerSocket::listenSocket()

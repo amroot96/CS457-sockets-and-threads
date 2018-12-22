@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TCPSOCKET_H
+#define TCPSOCKET_H
 
 #include <sys/socket.h>
 #include <netinet/in.h> 
@@ -27,6 +28,8 @@ namespace cs457
         tcpServerSocket(string networkAddress, uint portNumber);
         int bindSocket();
         int listenSocket();
+        inline uint getport() { return port;};
+        inline string getaddress() { return address;};
         tuple<shared_ptr<cs457::tcpUserSocket>,int> acceptSocket();
       
     private: 
@@ -46,4 +49,6 @@ namespace cs457
 
 
 }
+
+#endif
 

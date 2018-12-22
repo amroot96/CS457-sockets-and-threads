@@ -1,0 +1,5 @@
+anon @ user false
+john hello user false
+batman random user false
+robin random user false
+angela helloworld user false
